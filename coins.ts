@@ -1,7 +1,6 @@
-export const coins: Array<object> = [
+export const coins = [
     { name: 'Bitcoin', abbr: 'BTC'},
     { name: 'Ethereum', abbr: 'ETH'},
-    //{ name: 'Tether', abbr: 'Tether USDt'},
     { name: 'Notcoin', abbr: 'NOT'},
     { name: 'Toncoin', abbr: 'TON'},
     { name: 'Dogecoin', abbr: 'DOGE'},
@@ -9,4 +8,4 @@ export const coins: Array<object> = [
 ]
 
 const random: number = Math.floor(Math.random() * (coins.length - 1));
-export const randomCoin: object = coins[random];
+export const randomCoin: {name: string, abbr: string} = coins[random];

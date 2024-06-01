@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { CoinmarketcapComPage } from '../coinmarketcap-com-page'; 
 import { coins, randomCoin as coin } from '../coins';
 
-//const coin = coins[0];
+//const coin = randomCoin;// coins[0];
 
 /* // === NOT PAGE OBJECT ===
 
@@ -23,9 +23,9 @@ test('search coin', async ({ page }) => {
 
 // === USING CLASSES ===
 
-test(`search ${coin.abbr}-coin page`, async ({ page }) => {
+test(`search coin page`, async ({ page }) => {
   const coinmarketcapComPage = new CoinmarketcapComPage(page,coin.name);
   await coinmarketcapComPage.goto();
   await coinmarketcapComPage.openCoinPage(coin.name);
   await expect(page).toHaveTitle(`${coin.name} price today, ${coin.abbr} to USD live price, marketcap and chart | CoinMarketCap`);
-})
+});
