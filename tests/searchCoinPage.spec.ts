@@ -2,8 +2,6 @@ import { test, expect } from '@playwright/test';
 import { CoinmarketcapComPage } from '../coinmarketcap-com-page'; 
 import { coins, randomCoin as coin } from '../coins';
 
-//const coin = randomCoin;// coins[0];
-
 /* // === NOT PAGE OBJECT ===
 
 test('has title', async ({ page }) => {
