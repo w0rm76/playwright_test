@@ -12,7 +12,7 @@ export class CoinmarketcapComPage {
         this.page = page;
         this.searchCoinFieldButtonDesktop = page.locator('div.sc-e20acb0c-1');
         this.searchCoinField = page.getByPlaceholder('Search coin, pair, NFT, contract address, exchange, or post'); 
-        this.searchCoinFieldItem = page.locator('a>span', { hasText: `${coin}` });
+        this.searchCoinFieldItem = page.locator(`a[href="/currencies/${coin.toLowerCase()}/"].bwRagp`);
     }
 
     async goto() {
