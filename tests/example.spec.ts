@@ -1,12 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { CoinmarketcapComPage } from '../coinmarketcap-com-page'; 
-import { coins } from '../coins';
+import { coins, randomCoin as coin } from '../coins';
 
-const coin = coins[0];
+//const coin = coins[0];
 
-
-
-// === NO PAGE OBJECT ===
+/* // === NOT PAGE OBJECT ===
 
 test('has title', async ({ page }) => {
   await page.goto('https://coinmarketcap.com/');
@@ -21,11 +19,11 @@ test('search coin', async ({ page }) => {
   await page.locator(`a[href="/currencies/notcoin/"].bwRagp`).click();
 
   await expect(page).toHaveTitle('Notcoin price today, NOT to USD live price, marketcap and chart | CoinMarketCap');
-})
+}) */
 
-// === USING CLASS ===
+// === USING CLASSES ===
 
-test('search coin page', async ({ page }) => {
+test(`search ${coin.abbr}-coin page`, async ({ page }) => {
   const coinmarketcapComPage = new CoinmarketcapComPage(page,coin.name);
   await coinmarketcapComPage.goto();
   await coinmarketcapComPage.openCoinPage(coin.name);

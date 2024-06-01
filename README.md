@@ -5,3 +5,5 @@ learning project
 playwright install - yarn add playwright/npm install playwright
 
 allure install - yarn add allure-playwright/npm install allure-playwright
+
+run test - npx playwright test
