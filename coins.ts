@@ -1,4 +1,4 @@
-export const coins = [
+const coins = [
     { name: 'Bitcoin', abbr: 'BTC'},
     { name: 'Ethereum', abbr: 'ETH'},
     { name: 'Notcoin', abbr: 'NOT'},

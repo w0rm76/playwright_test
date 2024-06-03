@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { CoinmarketcapComPage } from '../coinmarketcap-com-page'; 
-import { coins, randomCoin as coin } from '../coins';
+import { randomCoin as coin } from '../coins';
 
 /* // === NOT PAGE OBJECT ===
 

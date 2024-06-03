@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
 import { CoinmarketcapComPage } from '../coinmarketcap-com-page'; 
-import { coins, randomCoin as coin } from '../coins';
 
 test(`change language`, async ({ page })=> {
     page.goto('https://coinmarketcap.com/');
