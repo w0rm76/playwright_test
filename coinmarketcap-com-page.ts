@@ -31,7 +31,7 @@ export class CoinmarketcapComPage {
     }
 
     async openCoinPage(coin: string) {
-        this.searchCoinFieldButtonDesktop = this.page.locator('div.sc-e20acb0c-1');
+        this.searchCoinFieldButtonDesktop = this.page.locator('div.sc-c4bb0b3-1');
         this.searchCoinField = this.page.getByPlaceholder('Search coin, pair, NFT, contract address, exchange, or post'); 
         this.searchCoinFieldItem = this.page.locator(`a[href="/currencies/${coin?.toLowerCase()}/"].bwRagp`);
 
